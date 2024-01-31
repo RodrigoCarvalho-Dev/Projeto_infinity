@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,300;1,400;1,900&display=swap');
+
+
+
+
+*{
+    margin : 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+
+
+
+#box-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 1rem 1rem 1rem;
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease;
+    border-bottom: 1px solid #fff;
+}
+
+#box-header.roll{
+  display: none;
+}
+
+#nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: #fff;
+}
+
+#nav ul button{
+    color: #fff;
+    background-color: red;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+
+
+#main-sections{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 500px;
+}
+
+#section-photo{
+    background: url("https://media.licdn.com/dms/image/C4E1BAQENyMtCZIOSNg/company-background_10000/0/1584333964739/infinityschool_cover?e=2147483647&v=beta&t=DZ-rCJBh5Z5Kez8MOY6Pesa_H8H2TbnZAOjletnBUwE")no-repeat;
+    background-position: center;
+  background-size: 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-photo img{
+    height: 400px;
+    width: 600px;
+}
+
+#section1{
+    gap: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0px 400px 0px;
+    border-bottom: 1px solid #fff;
+
+}
+
+#section1 img{
+    width: 500px;
+}
+
+#nav-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;  
+    color: #fff;
+}
+
+#nav-section1 button{
+    display: flex;
+    padding: 30px;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 10px;
+background-color: yellow ;
+transition: 0.4s ease;
+
+}
+
+#nav-section1 button:hover{
+    border: 1px solid #fff;
+
+}
+
+
+
+
+#section2{
+    gap: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0px 50px 0px;
+
+}
+
+
+#section2 img{
+    width: 500px;
+}
+
+#nav-section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+}
+
+#nav-section2 button{
+    display: flex;
+    padding: 30px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+background-color: blue ;
+transition: 0.4s ease;
+
+}
+
+#nav-section2 button:hover{
+    border: 1px solid #fff;
+
+}
+
+
+#footer-photo{
+    width: 100%;
+
+}
+
+
+
+footer{
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#footer1 button{
+    border: 1px solid #fff;
+    height: 200px;
+    width: 100%;
+    background-color: #000000;
+   
+}
+
+#footer1 button:hover{
+border:2px solid red;
+}
+
+#footer1 button ion-icon{
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    transition: 0.3s ease;
+}
+
+#footer1 button ion-icon:hover{
+    color: red;
+}
+
+#footer2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid #fff;
+}
+
+.footer2-box{
+color: #fff;
+border: 1px solid #fff;
+width: 100%;
+padding: 10px;
+}
+
+#footer2-box3{
+    color: #fff;
+border: 1px solid #fff;
+width: 200vw;
+
+padding: 10px;
+}
+
+#footer3{
+    display: flex;
+    border: 1px solid #fff;
+    width: 100%;
+}
+#footer3-box1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#footer3-box2{
+    color: #fff;
+}
+
+#footer4{
+   width: 100%;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 1200px;
+}
+
+
+
+
+
+
+@media screen and (max-width:415px){
+    #footer-photo{
+        display: none;
+    
+    }
+
+    #nav{
+        display: none;
+    }
+    
+
+    #box-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo{
+        width : 200px;
+    }
+
+    #section-photo{
+        width: 50%;
+        background-size: 50%;
+        display: none;
+       
+    }
+
+    #footer4{
+        gap: 0px;
+        width: 90%;
+    }
+
+    #footer2-box{
+        width: 50%;
+    }
+
+    #footer2-box3{
+
+    width: 100vw;
+
+    }
+
+    #footer2-box{
+        width: 100%;
+        padding: 0
+    }
+
+    #footer2{
+        display: none;
+    }
+
+    #section1 img{
+        width: 80%;
+    }
+
+    #section2 img{
+        width: 80%;
+    }
+    
+    #footer{
+        width: 80%;
+    }
+
+}
+
+
+
